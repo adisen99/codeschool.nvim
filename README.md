@@ -6,6 +6,8 @@ The basic structure and most of the code is inspired from the [gruvbox.nvim](htt
 
 # Installation
 
+**Requirements** - `codeschool.nvim` requires the `neovim-nightly` or `neovim v0.5` to work.
+
 Using `vim-plug`
 
 ```vim
