@@ -66,7 +66,7 @@ Apart from this option, all `g:codeschool_` configs are the same [as the origina
 
 ## light mode
 
-![Light mode](./media/Screenshot_dark.png)
+![Light mode](./media/Screenshot_light.png)
 
 # Contribution
 
