@@ -44,7 +44,7 @@ lua vim.g.codeschool_contrast_dark = "medium"
 
 or
 
-```vim`
+```vim
 lua vim.g.codeschool_contrast_light = "soft"
 ```
 
