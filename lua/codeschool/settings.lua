@@ -93,7 +93,7 @@ end
 local user_plugins = {}
 
 for _, v in pairs(vim.g.codeschool_enable_plugins) do
-	table.insert(plugins, v)
+	table.insert(user_plugins, v)
 end
 
 -- langs check
@@ -101,7 +101,7 @@ end
 local user_langs = {}
 
 for _, v in pairs(vim.g.codeschool_enable_langs) do
-	table.insert(langs, v)
+	table.insert(user_langs, v)
 end
 
 return {settings = settings, styles = styles, user_plugins= user_plugins, user_langs = user_langs}
