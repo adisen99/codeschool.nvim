@@ -1,5 +1,5 @@
 local lush = require("lush")
-local convert = require("lush.hsl.convert")
+local convert = require("lush.vivid.hsl.convert")
 local colors = require("codeschool.colors")
 local styles = require("codeschool.settings").styles
 local utils = require("codeschool.utils")
