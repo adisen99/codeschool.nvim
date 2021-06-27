@@ -3,8 +3,6 @@ local lush = require("lush")
 local base = require("codeschool.base")
 local colors = require("codeschool.colors")
 local styles = require("codeschool.settings").styles
-local utils = require("codeschool.utils")
-local user_plugins = require("codeschool.settings").user_plugins
 
 local netrw = lush(function()
   return {
@@ -306,7 +304,7 @@ local lsp = lush(function()
 	}
 end)
 
-local all_plugins = {
+local plugins = lush.merge({
 	netrw,
 	treesitter,
 	telescope,
@@ -322,16 +320,6 @@ local all_plugins = {
 	gitgutter,
 	gitsigns,
 	lsp
-}
-
-local temp_plugins = {}
-
-for _, v in pairs(all_plugins) do
-	if utils.contains(user_plugins, v) then
-		table.insert(temp_plugins, v)
-	end
-end
-
-local plugins = lush.merge(temp_plugins)
+})
 
 return plugins

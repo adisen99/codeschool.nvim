@@ -3,8 +3,6 @@ local lush = require("lush")
 local base = require("codeschool.base")
 local styles = require("codeschool.settings").styles
 local table_concat = table.concat
-local utils = require("codeschool.utils")
-local user_langs = require("codeschool.settings").user_langs
 
 -- golang
 local golang = lush(function()
@@ -509,7 +507,7 @@ local lua = lush(function()
   }
 end)
 
-local all_langs = lush.merge({
+local langs = lush.merge({
   golang,
   java,
   xml,
@@ -537,15 +535,5 @@ local all_langs = lush.merge({
   ocaml,
   lua,
 })
-
-local temp_langs = {}
-
-for _, v in pairs(all_langs) do
-	if utils.contains(user_langs, v) then
-		table.insert(temp_langs, v)
-	end
-end
-
-local langs = lush.merge(temp_langs)
 
 return langs

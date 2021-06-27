@@ -8,15 +8,6 @@ M.tobool = function(val)
   return true
 end
 
-M.contains = function(list, x)
-	for _, v in pairs(list) do
-		if v == x then
-			return true
-		end
-		return false
-	end
-end
-
 -- check if vim.g.codeschool_* color exists in current palette, return default color
 -- otherwise
 M.get_color_from_var = function(color, default, colors)
