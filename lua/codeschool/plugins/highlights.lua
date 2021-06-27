@@ -3,7 +3,6 @@ local lush = require("lush")
 local base = require("codeschool.base")
 local colors = require("codeschool.colors")
 local styles = require("codeschool.settings").styles
-local config = require("codeschool.config").config
 
 local netrw = lush(function()
   return {
@@ -305,7 +304,7 @@ local lsp = lush(function()
 	}
 end)
 
---[[ local plugins = lush.merge({
+local plugins = lush.merge({
 	netrw,
 	treesitter,
 	telescope,
@@ -321,8 +320,6 @@ end)
 	gitgutter,
 	gitsigns,
 	lsp
-}) ]]
-
-local plugins = lush.merge(config.plugins)
+})
 
 return plugins
