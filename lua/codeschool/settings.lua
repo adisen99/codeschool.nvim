@@ -17,6 +17,9 @@ local settings = {
   italicize_comments = true,
   italicize_strings = false,
   invert_intend_guides = false,
+	-- plugins and languages
+	enable_plugins = {},
+	enable_langs = {},
 }
 
 local styles = {
@@ -85,4 +88,20 @@ if utils.tobool(vim.g.codeschool_italicize_strings) then
   styles.italic_strings = "italic"
 end
 
-return {settings = settings, styles = styles}
+-- plugins check
+
+local user_plugins = {}
+
+for _, v in pairs(vim.g.codeschool_enable_plugins) do
+	table.insert(plugins, v)
+end
+
+-- langs check
+
+local user_langs = {}
+
+for _, v in pairs(vim.g.codeschool_enable_langs) do
+	table.insert(langs, v)
+end
+
+return {settings = settings, styles = styles, user_plugins= user_plugins, user_langs = user_langs}
