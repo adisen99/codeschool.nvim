@@ -3,6 +3,7 @@ local lush = require("lush")
 local base = require("codeschool.base")
 local styles = require("codeschool.settings").styles
 local table_concat = table.concat
+local config = require("codeschool.config").config
 
 -- golang
 local golang = lush(function()
@@ -507,7 +508,7 @@ local lua = lush(function()
   }
 end)
 
-local langs = lush.merge({
+--[[ local langs = lush.merge({
   golang,
   java,
   xml,
@@ -534,6 +535,8 @@ local langs = lush.merge({
   rust,
   ocaml,
   lua,
-})
+}) ]]
+
+local langs = lush.merge(config.langs)
 
 return langs

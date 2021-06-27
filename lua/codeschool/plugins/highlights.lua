@@ -3,8 +3,9 @@ local lush = require("lush")
 local base = require("codeschool.base")
 local colors = require("codeschool.colors")
 local styles = require("codeschool.settings").styles
+local config = require("codeschool.config").config
 
-local plugins = lush(function()
+local netrw = lush(function()
   return {
     -- netrw
     netrwDir {base.CodeschoolAqua},
@@ -17,6 +18,11 @@ local plugins = lush(function()
     netrwHelpCmd {base.CodeschoolAqua},
     netrwCmdSep {base.CodeschoolFg3},
     netrwVersion {base.CodeschoolGreen},
+	}
+end)
+
+local treesitter = lush(function()
+	return {
     -- nvim-treesitter
     TSNone {},
     TSError {base.Error},
@@ -69,6 +75,11 @@ local plugins = lush(function()
     TSStructure {base.CodeschoolOrange},
     TSTag {base.CodeschoolOrange},
     TSTagDelimiter {base.CodeschoolGreen},
+	}
+end)
+
+local telescope = lush(function()
+	return {
     -- telescope.nvim
     TelescopeSelection {base.CodeschoolOrangeBold},
     TelescopeSlectionCaret {base.CodeschoolRed},
@@ -81,6 +92,11 @@ local plugins = lush(function()
     TelescopeMatching {base.CodeschoolBlue},
     TelescopePromptPrefix {base.CodeschoolRed},
     TelescopePrompt {TelescopeNormal},
+	}
+end)
+
+local lspsaga = lush(function()
+	return {
     -- lspsaga.nvim
     LspSagaDiagnosticBorder {base.NormalNC},
     LspSagaDiagnosticHeader {base.CodeschoolRed},
@@ -116,6 +132,11 @@ local plugins = lush(function()
     LspSagaAutoPreview {},
     LspSagaDefPreviewBorder {gui = styles.bold},
     LspLinesDiagBorder {gui = styles.bold},
+	}
+end)
+
+local startify = lush(function()
+	return {
     -- vim-startify
     StartifyBracket {base.Delimiter},
     StartifyFile {base.Identifier},
@@ -128,15 +149,30 @@ local plugins = lush(function()
     StartifyFooter {base.Title},
     StartifyVar {StartifyPath},
     StartifySelect {base.Title},
+	}
+end)
+
+local signify = lush(function()
+	return {
     -- vim-signify
     SignifySignAdd {base.CodeschoolGreenSign},
     SignifySignChange {base.CodeschoolAquaSign},
     SignifySignDelete {base.CodeschoolRedSign},
+	}
+end)
+
+local syntastic = lush(function()
+	return {
     -- syntastic
-    --[[ SyntasticError {base.CodeschoolRedUnderline},
+    SyntasticError {base.CodeschoolRedUnderline},
     SyntasticWarning {base.CodeschoolYellowUnderline},
     SyntasticErrorSign {base.CodeschoolRedSign},
-    SyntasticWarningSign {base.CodeschoolYellowSign}, ]]
+    SyntasticWarningSign {base.CodeschoolYellowSign},
+	}
+end)
+
+local nerdtree = lush(function()
+	return {
     -- nerdtree
     NERDTreeDir {base.CodeschoolAqua},
     NERDTreeDirSlash {base.CodeschoolAqua},
@@ -148,7 +184,11 @@ local plugins = lush(function()
     NERDTreeCWD {base.CodeschoolGreen},
     NERDTreeHelp {base.CodeschoolFg1},
     NERDTreeToggleOn {base.CodeschoolGreen},
-    NERDTreeToggleOff {base.CodeschoolRed},
+	}
+end)
+
+local nvimtree = lush(function()
+	return {
 		-- nvimtree
     NvimTreeImageFile     {base.CodeschoolBlue},
     NvimTreeGitDirty      {fg = colors.neutral_orange},
@@ -163,6 +203,11 @@ local plugins = lush(function()
     NvimTreeRootFolder    {base.fg3},
     NvimTreeExecFile      {base.CodeschoolOrange},
     NvimTreeSpecialFile   {base.CodeschoolYellow},
+	}
+end)
+
+local coc = lush(function()
+	return {
     -- coc.nvim
     CocErrorSign {base.CodeschoolRedSign},
     CocWarningSign {base.CodeschoolOrangeSign},
@@ -182,6 +227,11 @@ local plugins = lush(function()
     CocWarningHighlight {base.CodeschoolOrangeUnderline},
     CocInfoHighlight {base.CodeschoolBlueUnderline},
     CocHintHighlight {base.CodeschoolAquaUnderline},
+	}
+end)
+
+local buftabline = lush(function()
+	return {
     -- vim-buftabline
     BufTabLineCurrent {base.TabLineSel},
     BufTabLineActive {base.PmenuSel},
@@ -190,6 +240,11 @@ local plugins = lush(function()
     BufTabLineModifiedCurrent {BufTabLineCurrent},
     BufTabLineModifiedActive {BufTabLineActive},
     BufTabLineModifiedHidden {BufTabLineHidden},
+	}
+end)
+
+local fzf = lush(function()
+	return {
     -- fzf.vim
     Fzf1 {fg = base.CodeschoolBlue.fg.hex, bg = base.CodeschoolBg1.fg.hex},
     Fzf2 {fg = base.CodeschoolOrange.fg.hex, bg = base.CodeschoolBg1.fg.hex},
@@ -198,16 +253,31 @@ local plugins = lush(function()
     ShowMarksHLu {base.CodeschoolBlueSign},
     ShowMarksHLo {base.CodeschoolBlueSign},
     ShowMarksHLm {base.CodeschoolBlueSign},
+	}
+end)
+
+local gitgutter = lush(function()
+	return {
     -- git-gutter
     GitGutterAdd {base.CodeschoolGreenSign},
     GitGutterChange {base.CodeschoolAquaSign},
     GitGutterDelete {base.CodeschoolRedSign},
     GitGutterChangeDelete {base.CodeschoolAquaSign},
+	}
+end)
+
+local gitsigns = lush(function()
+	return {
     -- gitsigns.nvim
     GitSignsAdd {base.CodeschoolGreenSign},
     GitSignsChange {base.CodeschoolBlueSign},
     GitSignsDelete {base.CodeschoolRedSign},
     -- GitSignsCurrentLineBlame {base.NonText},
+	}
+end)
+
+local lsp = lush(function()
+	return {
     -- LSP
     -- LspDiagnosticsDefaultError {base.CodeschoolRed},
     LspDiagnosticsSignError {base.CodeschoolErrorSign},
@@ -234,5 +304,25 @@ local plugins = lush(function()
     -- LspReferenceWrite {base.CodeschoolYellowBold},
 	}
 end)
+
+--[[ local plugins = lush.merge({
+	netrw,
+	treesitter,
+	telescope,
+	lspsaga,
+	startify,
+	signify,
+	syntastic,
+	nerdtree,
+	nvimtree,
+	coc,
+	buftabline,
+	fzf,
+	gitgutter,
+	gitsigns,
+	lsp
+}) ]]
+
+local plugins = lush.merge(config.plugins)
 
 return plugins
