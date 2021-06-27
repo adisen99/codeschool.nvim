@@ -324,12 +324,14 @@ local all_plugins = {
 	lsp
 }
 
-local plugins = {}
+local temp_plugins = {}
 
 for _, v in pairs(all_plugins) do
 	if utils.contains(user_plugins, v) then
-		table.insert(plugins, v)
+		table.insert(temp_plugins, v)
 	end
 end
+
+local plugins = lush.merge(temp_plugins)
 
 return plugins

@@ -538,12 +538,14 @@ local all_langs = lush.merge({
   lua,
 })
 
-local langs = {}
+local temp_langs = {}
 
 for _, v in pairs(all_langs) do
 	if utils.contains(user_langs, v) then
-		table.insert(langs, v)
+		table.insert(temp_langs, v)
 	end
 end
+
+local langs = lush.merge(temp_langs)
 
 return langs
