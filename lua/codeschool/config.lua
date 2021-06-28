@@ -3,8 +3,8 @@
 local config = {
 	-- TODO: add default options
 	options = {},
-	plugins = {},
-	langs = {}
+	plugins = {"netrw"},
+	langs = {"lua"}
 }
 
 local function apply_config(config_table)
