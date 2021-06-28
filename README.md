@@ -74,4 +74,14 @@ Apart from this option, all `g:codeschool_` configs are the same [as the origina
 
 This colorscheme is still in development and testing. Users are welcome to use it however for programming daily. In case a user spots any bugs or error especially related to the supported plugins, treesitter or built-in LSP highlight support, then they can contribute by opening an issue or by making a pull request. More plugin highlight support is also welcome.
 
+### TODO
+
+- [x] Enable setup function
+- [x] Enable support for choosing plugin highlights
+- [x] Enable support for choosing language highlights
+- [ ] Enable supprt for choosing options via setup function
+- [x] Disable global set options functionality
+- [x] Removed support for airline/lualine
+- [x] Added theme in nvim-hardline
+
 #### HAPPY CODING :smile:
