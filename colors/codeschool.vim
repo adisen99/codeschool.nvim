@@ -7,4 +7,5 @@ package.loaded["codeschool.base"] = nil
 package.loaded["codeschool.config"] = nil
 package.loaded["codeschool.utils"] = nil
 require("lush")
+require('codeschool').setup()
 EOF
