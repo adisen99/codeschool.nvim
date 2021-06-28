@@ -6,5 +6,5 @@ package.loaded["codeschool.base"] = nil
 -- package.loaded["codeschool.languages"] = nil
 -- package.loaded["codeschool.config"] = nil
 -- package.loaded["codeschool.utils"] = nil
-require("lush")(require('codeschool').setup())
+require("lush")(require('codeschool'))
 EOF
