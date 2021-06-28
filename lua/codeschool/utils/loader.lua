@@ -28,9 +28,9 @@ local function load_langs(config)
 	return loaded_langs
 end
 
-local function load_all(config)
-	local loaded = lush.merge(load_plugins(config), load_langs(config))
-	return loaded
-end
+--[[ local function load_all(config)
+	load_plugins(config)
+	load_langs(config)
+end ]]
 
-return {load_all = load_all}
+return {load_plugins = load_plugins, load_langs = load_langs}
