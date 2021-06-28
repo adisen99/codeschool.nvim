@@ -1,5 +1,7 @@
 -- Utility function to load user config
 
+local lush = require("lush")
+
 local function load_plugins(config)
   for index, plugin in pairs(config.plugins) do
     if type(plugin) == 'string' then
@@ -9,6 +11,8 @@ local function load_plugins(config)
       config.plugins[index] = plugin ]]
     end
   end
+	local loaded_plugins = lush.merge(config.plugins)
+	return loaded_plugins
 end
 
 local function load_langs(config)
@@ -20,11 +24,13 @@ local function load_langs(config)
       config.langs[index] = lang ]]
     end
   end
+	local loaded_langs = lush.merge(config.langs)
+	return loaded_langs
 end
 
 local function load_all(config)
-  load_plugins(config)
-	load_langs(config)
+	local loaded = lush.merge(load_plugins(config), load_langs(config))
+	return loaded
 end
 
 return {load_all = load_all}

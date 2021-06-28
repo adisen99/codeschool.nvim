@@ -10,7 +10,8 @@ local function setup(user_config)
 	if user_config then
 		config_module.apply_config(user_config)
 	end
-	loader.load_all(config)
+	local loaded = loader.load_all(config)
+	return loaded
 end
 
 return {base = base, setup = setup}
