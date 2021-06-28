@@ -11,7 +11,7 @@ local function setup(user_config)
 		config_module.apply_config(user_config)
 	elseif vim.cmd('colorscheme codeschool') then
 		vim.schedule(function()
-			vim.api.nvim_err_writeln(
+			vim.api.nvim_err_write(
 			[[codeschool.nvim: Support for vimscript will end soon, please change your config to lua or wrap it around lua << EOF ... EOF]]) -- luacheck: ignore
     end)
 	end
