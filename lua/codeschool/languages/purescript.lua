@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local purescript = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     purescriptModuleKeyword {base.CodeschoolAqua},
     purescriptModuleName {base.CodeschoolFg1},
@@ -22,4 +24,4 @@ local purescript = lush(function()
   }
 end)
 
-return purescript
+return M

@@ -15,4 +15,4 @@ local function setup(user_config)
 	return lush.merge({base, load_plugins, load_langs})
 end
 
-return setup
+return {setup = setup}

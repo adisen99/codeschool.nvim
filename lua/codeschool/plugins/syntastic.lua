@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local syntastic = lush(function()
+local M = {}
+
+M = lush(function()
 	return {
     -- syntastic
     SyntasticError {base.CodeschoolRedUnderline},
@@ -12,4 +14,4 @@ local syntastic = lush(function()
 	}
 end)
 
-return syntastic
+return M

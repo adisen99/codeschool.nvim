@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local scala = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     scalaNameDefinition {base.CodeschoolFg1},
     scalaCaseFollowing {base.CodeschoolFg1},
@@ -19,4 +21,4 @@ local scala = lush(function()
   }
 end)
 
-return scala
+return M

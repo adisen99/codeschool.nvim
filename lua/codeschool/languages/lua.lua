@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local lua = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     luaIn {base.CodeschoolRed},
     luaFunction {base.CodeschoolAqua},
@@ -10,4 +12,4 @@ local lua = lush(function()
   }
 end)
 
-return lua
+return M

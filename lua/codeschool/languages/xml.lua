@@ -2,8 +2,10 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
+local M = {}
+
 -- xml
-local xml = lush(function()
+M = lush(function()
   return {
     xmlTag {base.CodeschoolAquaBold},
     xmlEndTag {base.CodeschoolAquaBold},
@@ -26,4 +28,4 @@ local xml = lush(function()
   }
 end)
 
-return xml
+return M

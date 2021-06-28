@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local elixir = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     elixirDocString {base.Comment},
     elixirStringDelimiter {base.CodeschoolGreen},
@@ -11,4 +13,4 @@ local elixir = lush(function()
   }
 end)
 
-return elixir
+return M

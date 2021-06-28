@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local fzf = lush(function()
+local M = {}
+
+M = lush(function()
 	return {
     -- fzf.vim
     Fzf1 {fg = base.CodeschoolBlue.fg.hex, bg = base.CodeschoolBg1.fg.hex},
@@ -15,4 +17,4 @@ local fzf = lush(function()
 	}
 end)
 
-return fzf
+return M

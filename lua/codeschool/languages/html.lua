@@ -4,7 +4,9 @@ local base = require("codeschool.base")
 local styles = require("codeschool.settings").styles
 local table_concat = table.concat
 
-local html = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     htmlTag {base.CodeschoolAquaBold},
     htmlEndTag {base.CodeschoolAquaBold},
@@ -32,4 +34,4 @@ local html = lush(function()
   }
 end)
 
-return html
+return M

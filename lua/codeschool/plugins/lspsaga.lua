@@ -3,7 +3,9 @@ local lush = require("lush")
 local base = require("codeschool.base")
 local styles = require("codeschool.settings").styles
 
-local lspsaga = lush(function()
+local M = {}
+
+M = lush(function()
 	return {
     -- lspsaga.nvim
     LspSagaDiagnosticBorder {base.NormalNC},
@@ -43,4 +45,4 @@ local lspsaga = lush(function()
 	}
 end)
 
-return lspsaga
+return M

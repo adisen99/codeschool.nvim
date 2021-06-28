@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local gitsigns = lush(function()
+local M = {}
+
+M = lush(function()
 	return {
     -- gitsigns.nvim
     GitSignsAdd {base.CodeschoolGreenSign},
@@ -12,4 +14,4 @@ local gitsigns = lush(function()
 	}
 end)
 
-return gitsigns
+return M

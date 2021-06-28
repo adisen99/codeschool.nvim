@@ -7,8 +7,8 @@ local function load_plugins(config)
     if type(plugin) == 'string' then
       local local_plugin = require('codeschool.plugins.' .. plugin)
       config.plugins[index] = local_plugin
-    --[[ elseif type(plugin) == 'table' then
-      config.plugins[index] = plugin ]]
+    elseif type(plugin) == 'table' then
+      config.plugins[index] = plugin
     end
   end
 	local loaded_plugins = lush.merge(config.plugins)
@@ -20,8 +20,8 @@ local function load_langs(config)
     if type(lang) == 'string' then
       local local_lang = require('codeschool.languages.' .. lang)
       config.langs[index] = local_lang
-    --[[ elseif type(lang) == 'table' then
-      config.langs[index] = lang ]]
+    elseif type(lang) == 'table' then
+      config.langs[index] = lang
     end
   end
 	local loaded_langs = lush.merge(config.langs)

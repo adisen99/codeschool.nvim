@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local netrw = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     -- netrw
     netrwDir {base.CodeschoolAqua},
@@ -18,4 +20,4 @@ local netrw = lush(function()
 	}
 end)
 
-return netrw
+return M

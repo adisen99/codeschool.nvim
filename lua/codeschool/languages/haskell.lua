@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local haskell = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     haskellType {base.CodeschoolBlue},
     haskellIdentifier {base.CodeschoolAqua},
@@ -41,4 +43,4 @@ local haskell = lush(function()
   }
 end)
 
-return haskell
+return M

@@ -2,8 +2,10 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
+local M = {}
+
 -- golang
-local golang = lush(function()
+M = lush(function()
   return {
     goDirective {base.CodeschoolAqua},
     goConstants {base.CodeschoolPurple},
@@ -13,4 +15,4 @@ local golang = lush(function()
   }
 end)
 
-return golang
+return M

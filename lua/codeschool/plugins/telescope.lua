@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local telescope = lush(function()
+local M = {}
+
+M = lush(function()
 	return {
     -- telescope.nvim
     TelescopeSelection {base.CodeschoolOrangeBold},
@@ -19,4 +21,4 @@ local telescope = lush(function()
 	}
 end)
 
-return telescope
+return M

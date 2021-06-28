@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local js = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     javaScriptBraces {base.CodeschoolFg1},
     javaScriptFunction {base.CodeschoolAqua},
@@ -85,4 +87,4 @@ local js = lush(function()
   }
 end)
 
-return js
+return M

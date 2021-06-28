@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local coc = lush(function()
+local M = {}
+
+M = lush(function()
 	return {
     -- coc.nvim
     CocErrorSign {base.CodeschoolRedSign},
@@ -26,4 +28,4 @@ local coc = lush(function()
 	}
 end)
 
-return coc
+return M

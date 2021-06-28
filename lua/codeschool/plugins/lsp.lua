@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local lsp = lush(function()
+local M = {}
+
+M = lush(function()
 	return {
     -- LSP
     -- LspDiagnosticsDefaultError {base.CodeschoolRed},
@@ -31,4 +33,4 @@ local lsp = lush(function()
 	}
 end)
 
-return lsp
+return M

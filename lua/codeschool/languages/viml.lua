@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local viml = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     vimNotation {base.CodeschoolOrange},
     vimBracket {base.CodeschoolOrange},
@@ -14,4 +16,4 @@ local viml = lush(function()
   }
 end)
 
-return viml
+return M

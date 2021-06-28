@@ -3,7 +3,9 @@ local lush = require("lush")
 local base = require("codeschool.base")
 local styles = require("codeschool.settings").styles
 
-local treesitter = lush(function()
+local M = {}
+
+M = lush(function()
 	return {
     -- nvim-treesitter
     TSNone {},
@@ -60,4 +62,4 @@ local treesitter = lush(function()
 	}
 end)
 
-return treesitter
+return M

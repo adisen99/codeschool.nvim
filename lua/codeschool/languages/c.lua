@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local c = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     cOperator {base.CodeschoolPurple},
     cppOperator {base.CodeschoolPurple},
@@ -11,4 +13,4 @@ local c = lush(function()
   }
 end)
 
-return c
+return M

@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local rust = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     rustSigil {base.CodeschoolOrange},
     rustEscape {base.CodeschoolAqua},
@@ -15,4 +17,4 @@ local rust = lush(function()
   }
 end)
 
-return rust
+return M

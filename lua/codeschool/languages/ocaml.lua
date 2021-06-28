@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local ocaml = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     ocamlOperator {base.CodeschoolFg1},
     ocamlKeyChar {base.CodeschoolOrange},
@@ -12,4 +14,4 @@ local ocaml = lush(function()
   }
 end)
 
-return ocaml
+return M

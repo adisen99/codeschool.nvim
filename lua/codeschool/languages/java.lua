@@ -2,8 +2,10 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
+local M = {}
+
 -- java
-local java = lush(function()
+M = lush(function()
   return {
     javaAnnotation {base.CodeschoolBlue},
     javaDocTags {base.CodeschoolAqua},
@@ -18,4 +20,4 @@ local java = lush(function()
   }
 end)
 
-return java
+return M

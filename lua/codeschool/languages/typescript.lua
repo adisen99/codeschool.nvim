@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local typescript = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     typescriptReserved {base.CodeschoolAqua},
     typescriptLabel {base.CodeschoolAqua},
@@ -30,4 +32,4 @@ local typescript = lush(function()
   }
 end)
 
-return typescript
+return M

@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local signify = lush(function()
+local M = {}
+
+M = lush(function()
 	return {
     -- vim-signify
     SignifySignAdd {base.CodeschoolGreenSign},
@@ -11,4 +13,4 @@ local signify = lush(function()
 	}
 end)
 
-return signify
+return M

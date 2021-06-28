@@ -2,8 +2,10 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
+local M = {}
+
 -- python
-local python = lush(function()
+M = lush(function()
   return {
     pythonBuiltin {base.CodeschoolOrange},
     pythonBuiltinObj {base.CodeschoolOrange},
@@ -25,4 +27,4 @@ local python = lush(function()
   }
 end)
 
-return python
+return M

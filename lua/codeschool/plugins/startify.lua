@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local startify = lush(function()
+local M = {}
+
+M = lush(function()
 	return {
     -- vim-startify
     StartifyBracket {base.Delimiter},
@@ -19,4 +21,4 @@ local startify = lush(function()
 	}
 end)
 
-return startify
+return M

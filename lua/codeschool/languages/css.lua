@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local css = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     cssBraces {base.CodeschoolBlue},
     cssFunctionName {base.CodeschoolYellow},
@@ -37,4 +39,4 @@ local css = lush(function()
   }
 end)
 
-return css
+return M

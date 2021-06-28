@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local jsx = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     jsxTagName {base.CodeschoolAqua},
     jsxComponentName {base.CodeschoolGreen},
@@ -12,4 +14,4 @@ local jsx = lush(function()
   }
 end)
 
-return jsx
+return M

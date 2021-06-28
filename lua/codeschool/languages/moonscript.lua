@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local moonscript = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     moonSpecialOp {base.CodeschoolFg3},
     moonExtendedOp {base.CodeschoolFg3},
@@ -11,4 +13,4 @@ local moonscript = lush(function()
   }
 end)
 
-return moonscript
+return M

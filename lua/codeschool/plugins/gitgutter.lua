@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local gitgutter = lush(function()
+local M = {}
+
+M = lush(function()
 	return {
     -- git-gutter
     GitGutterAdd {base.CodeschoolGreenSign},
@@ -12,4 +14,4 @@ local gitgutter = lush(function()
 	}
 end)
 
-return gitgutter
+return M

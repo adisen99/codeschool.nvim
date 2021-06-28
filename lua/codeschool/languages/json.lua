@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local json = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     jsonKeyword {base.CodeschoolGreen},
     jsonQuote {base.CodeschoolGreen},
@@ -11,4 +13,4 @@ local json = lush(function()
   }
 end)
 
-return json
+return M

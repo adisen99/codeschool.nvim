@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local buftabline = lush(function()
+local M = {}
+
+M = lush(function()
 	return {
     -- vim-buftabline
     BufTabLineCurrent {base.TabLineSel},
@@ -15,4 +17,4 @@ local buftabline = lush(function()
 	}
 end)
 
-return buftabline
+return M

@@ -3,7 +3,9 @@ local lush = require("lush")
 local base = require("codeschool.base")
 local styles = require("codeschool.settings").styles
 
-local clojure = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     clojureKeyword {base.CodeschoolBlue},
     clojureCond {base.CodeschoolOrange},
@@ -30,4 +32,4 @@ local clojure = lush(function()
   }
 end)
 
-return clojure
+return M

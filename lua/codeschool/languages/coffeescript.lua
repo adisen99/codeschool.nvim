@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local coffeescript = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     coffeeExtendedOp {base.CodeschoolFg3},
     coffeeSpecialOp {base.CodeschoolFg3},
@@ -12,4 +14,4 @@ local coffeescript = lush(function()
   }
 end)
 
-return coffeescript
+return M

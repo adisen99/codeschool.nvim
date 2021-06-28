@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local csharp = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     csBraces {base.CodeschoolFg1},
     csEndColon {base.CodeschoolFg1},
@@ -16,4 +18,4 @@ local csharp = lush(function()
   }
 end)
 
-return csharp
+return M

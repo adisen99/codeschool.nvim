@@ -2,7 +2,9 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 
-local nerdtree = lush(function()
+local M = {}
+
+M = lush(function()
 	return {
     -- nerdtree
     NERDTreeDir {base.CodeschoolAqua},
@@ -18,4 +20,4 @@ local nerdtree = lush(function()
 	}
 end)
 
-return nerdtree
+return M

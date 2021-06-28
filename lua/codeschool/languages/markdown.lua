@@ -3,7 +3,9 @@ local lush = require("lush")
 local base = require("codeschool.base")
 local styles = require("codeschool.settings").styles
 
-local markdown = lush(function()
+local M = {}
+
+M = lush(function()
   return {
     markdownItalic {fg = base.CodeschoolFg3.fg.hex, gui = styles.italic_strings},
     markdownH1 {base.CodeschoolGreenBold},
@@ -31,4 +33,4 @@ local markdown = lush(function()
   }
 end)
 
-return markdown
+return M

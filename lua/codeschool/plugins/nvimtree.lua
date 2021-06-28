@@ -3,7 +3,9 @@ local lush = require("lush")
 local base = require("codeschool.base")
 local colors = require("codeschool.colors")
 
-local nvimtree = lush(function()
+local M = {}
+
+M = lush(function()
 	return {
 		-- nvimtree
     NvimTreeImageFile     {base.CodeschoolBlue},
@@ -22,4 +24,4 @@ local nvimtree = lush(function()
 	}
 end)
 
-return nvimtree
+return M
