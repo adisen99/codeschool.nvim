@@ -2,7 +2,7 @@
 
 local config = {
 	-- TODO: add default options
-	options = {},
+	-- options = {},
 	plugins = {},
 	langs = {}
 }
