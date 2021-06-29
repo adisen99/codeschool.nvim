@@ -1,6 +1,6 @@
 # codeschool.nvim
 
-A pretty colorscheme for neovim written in `Lua` based on the [codeschool.vim](https://github.com/flazz/vim-colorschemes/blob/master/colors/codeschool.vim) color pattete with support for `nvim-treesitter` and `neovim built-in lsp` which can be enabled using `setup()` function (please refer to #Usage)
+A pretty colorscheme for neovim written in `Lua` based on the [codeschool.vim](https://github.com/flazz/vim-colorschemes/blob/master/colors/codeschool.vim) color pattete with support for `nvim-treesitter` and `neovim built-in lsp` which can be enabled using `setup()` function (please refer to [#Usage](https://github.com/adisen99/codeschool.nvim/tree/master#usage))
 
 The basic structure and most of the code is inspired from the [gruvbox.nvim](https://github.com/npxbr/gruvbox.nvim) colorscheme written by `npxbr` and [Ellison Leao](https://github.com/ellisonleao)
 
@@ -103,8 +103,7 @@ lua vim.g.codeschool_contrast_light = "soft"
 " or
 let g:codeschool_contrast_light = "soft"
 ```
-
-Apart from this option, all `g:codeschool_` configs are the same [as the original gruvbox one](https://github.com/morhetz/codeschool/wiki/Configuration) except for `g:codeschool_guisp_fallback`. The exact options will be added in the Wiki of this project soon. In the meantime you can use the gruvbox ones by changing the prefix from `gruvbox_` to `codeschool_`
+**For more Configuration option** - go to the [CONFIGURATION](https://github.com/adisen99/codeschool.nvim/wiki/Configuration) page in the [WIKI](https://github.com/adisen99/codeschool.nvim/wiki)
 
 # Additional supported plugins
 
