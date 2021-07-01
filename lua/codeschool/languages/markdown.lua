@@ -8,15 +8,15 @@ local M = {}
 M = lush(function()
   return {
     markdownItalic {fg = base.CodeschoolFg3.fg.hex, gui = styles.italic_strings},
-    markdownH1 {base.CodeschoolGreenBold},
-    markdownH2 {markdownH1},
-    markdownH3 {base.CodeschoolYellowBold},
+    markdownH1 {base.CodeschoolAquaBold},
+    markdownH2 {base.CodeschoolRedBold},
+    markdownH3 {base.CodeschoolPurpleBold},
     markdownH4 {markdownH3},
-    markdownH5 {base.CodeschoolYellow},
-    markdownH6 {markdownH5},
-    markdownCode {base.CodeschoolAqua},
-    markdownCodeBlock {base.CodeschoolAqua},
-    markdownCodeDelimiter {base.CodeschoolAqua},
+    --[[ markdownH5 {base.CodeschoolYellow},
+    markdownH6 {markdownH5}, ]]
+    markdownCode {base.CodeschoolGreen},
+    markdownCodeBlock {base.CodeschoolGreen},
+    markdownCodeDelimiter {base.CodeschoolGreen},
     markdownBlockquote {base.CodeschoolGray},
     markdownListMarker {base.CodeschoolGray},
     markdownOrderedListMarker {base.CodeschoolGray},
@@ -27,7 +27,7 @@ M = lush(function()
     markdownLinkTextDelimiter {base.CodeschoolFg3},
     markdownHeadingDelimiter {base.CodeschoolOrange},
     markdownUrl {base.CodeschoolPurple},
-    markdownUrlTitleDelimiter {base.CodeschoolGreen},
+    markdownUrlTitleDelimiter {base.CodeschoolAqua},
     markdownLinkText {fg = base.CodeschoolGray.fg.hex, gui = styles.underline},
     markdownIdDeclaration {markdownLinkText},
   }
