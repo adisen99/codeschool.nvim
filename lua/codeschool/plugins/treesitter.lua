@@ -2,6 +2,8 @@
 local lush = require("lush")
 local base = require("codeschool.base")
 local styles = require("codeschool.settings").styles
+local colors = require("codeschool.colors")
+local table_concat = table.concat
 
 local M = {}
 
@@ -59,7 +61,9 @@ M = lush(function()
     TSStructure {base.CodeschoolOrange},
     TSTag {base.CodeschoolOrange},
     TSTagDelimiter {base.CodeschoolGreen},
-    TSNote {base.Todo}
+    TSNote {base.Todo},
+    TSWarning {fg = colors.bright_yellow, gui = table_concat(styles.bold, styles.italicize_comments)},
+    TSDanger {fg = colors.neutral_red , gui = table_concat(styles.bold, styles.italicize_comments)},
 	}
 end)
 
