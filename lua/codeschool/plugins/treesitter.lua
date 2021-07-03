@@ -55,11 +55,11 @@ M = lush(function()
     TSStrong {gui = styles.bold},
     TSEmphasis {gui = styles.italic_strings},
     TSUnderline {gui = styles.underline},
-    TSComment {base.Comment},
+    -- TSComment {base.Comment},
     TSStructure {base.CodeschoolOrange},
     TSTag {base.CodeschoolOrange},
     TSTagDelimiter {base.CodeschoolGreen},
-		TSWarning {base.Todo}
+		-- TSWarning {base.Todo}
 	}
 end)
 
