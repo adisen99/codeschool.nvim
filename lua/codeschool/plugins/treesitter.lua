@@ -62,8 +62,8 @@ M = lush(function()
     TSTag {base.CodeschoolOrange},
     TSTagDelimiter {base.CodeschoolGreen},
     TSNote {base.Todo},
-    TSWarning {fg = colors.bright_yellow, gui = table_concat(styles.bold, styles.italicize_comments)},
-    TSDanger {fg = colors.neutral_red , gui = table_concat(styles.bold, styles.italicize_comments)},
+    TSWarning {fg = colors.bright_yellow, gui = table_concat({styles.bold, styles.italicize_comments}, ",")},
+    TSDanger {fg = colors.neutral_red , gui = table_concat({styles.bold, styles.italicize_comments}, ",")}
 	}
 end)
 
