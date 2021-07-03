@@ -9,7 +9,7 @@ M = lush(function()
 	return {
     -- nvim-treesitter
     TSNone {},
-    TSError {base.Error},
+    TSError {base.CodeschoolError},
     TSTitle {base.Title},
     TSLiteral {base.String},
     TSURI {base.Underlined},
