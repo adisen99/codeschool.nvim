@@ -59,7 +59,7 @@ M = lush(function()
     TSStructure {base.CodeschoolOrange},
     TSTag {base.CodeschoolOrange},
     TSTagDelimiter {base.CodeschoolGreen},
-		-- TSWarning {base.Todo}
+    TSNote {base.Todo}
 	}
 end)
 
