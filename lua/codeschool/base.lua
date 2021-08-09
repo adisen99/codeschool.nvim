@@ -103,6 +103,12 @@ if not utils.tobool(vim.g.codeschool_improved_strings) then
   special_string_gui = nil
 end
 
+local background = nil
+
+if not utils.tobool(vim.g.codeschool_transparent_bg) then
+  background  = bg0
+end
+
 -- neovim terminal mode colors
 vim.g.terminal_color_0 = bg0.hex
 vim.g.terminal_color_8 = gray.hex
@@ -201,7 +207,7 @@ local base_group = lush(function()
     --[[ ModeMsg {CodeschoolYellowBold},
     MoreMsg {CodeschoolYellowBold}, ]]
     NonText {CodeschoolBg2},
-    Normal {fg = fg1, bg = bg0},
+    Normal {fg = fg1, bg = background},
     Pmenu {fg = fg1, bg = bg2},
     PmenuSel {fg = bg2, bg = blue, gui = styles.bold},
     PmenuSbar {bg = bg2},
