@@ -35,53 +35,58 @@ Inside `init.lua`
 vim.o.background = "dark" -- or "light" for light mode
 
 -- Load and setup function to choose plugin and language highlights
-require('codeschool').setup({
+require('lush')(require('codeschool').setup({
   plugins = {
     "buftabline",
-	"coc",
-	"fzf",
-	"gitgutter",
-	"gitsigns",
-	"lsp",
-	"lspsaga",
-	"nerdtree",
-	"netrw",
-	"nvimtree",
-	"signify",
-	"startify",
-	"syntastic",
-	"telescope",
-	"treesitter"
+    "coc",
+    "fzf",
+    "gitgutter",
+    "gitsigns",
+    "lsp",
+    "lspsaga",
+    "nerdtree",
+    "netrw",
+    "nvimtree",
+    "signify",
+    "startify",
+    "syntastic",
+    "telescope",
+    "treesitter"
   },
   langs = {
     "c",
-	"clojure",
-	"coffeescript",
-	"csharp",
-	"css",
-	"elixir",
-	"golang",
-	"haskell",
-	"html",
-	"java",
-	"js",
-	"json",
-	"jsx",
-	"lua",
-	"markdown",
-	"moonscript",
-	"objc",
-	"ocaml",
-	"purescript",
-	"python",
-	"ruby",
-	"rust",
-	"scala",
-	"typescript",
-	"viml",
-	"xml"
+    "clojure",
+   	"coffeescript",
+   	"csharp",
+   	"css",
+   	"elixir",
+   	"golang",
+   	"haskell",
+   	"html",
+   	"java",
+   	"js",
+   	"json",
+   	"jsx",
+   	"lua",
+   	"markdown",
+   	"moonscript",
+   	"objc",
+   	"ocaml",
+   	"purescript",
+   	"python",
+   	"ruby",
+   	"rust",
+   	"scala",
+   	"typescript",
+   	"viml",
+   	"xml"
   }
-})
+}))
+```
+
+If you want no plugin support then use colorscheme command instead -
+```lua
+vim.cmd(colorscheme codeschool)
 ```
 
 **NOTE** - None of the plugins or languages highlights are enabled by default, the user is free to use the setup function to select which plugin highlights or language highlights they want to load.
