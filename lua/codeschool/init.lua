@@ -9,7 +9,7 @@ local config = config_module.config
 local function setup(user_config)
   vim.cmd('hi clear')
   if vim.fn.exists("syntax_on") then vim.cmd('syntax reset') end
-  vim.g.colors_name("codeschool")
+  vim.g.colors_name = "codeschool"
 
 	if user_config then
 		config_module.apply_config(user_config)
