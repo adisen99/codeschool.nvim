@@ -7,6 +7,7 @@ local M = {}
 M = lush(function()
 	return {
     -- LSP
+    LspCodeLens {base.CodeschoolGray},
     -- LspDiagnosticsDefaultError {base.CodeschoolRed},
     LspDiagnosticsSignError {base.CodeschoolErrorSign},
     -- LspDiagnosticsUnderlineError {base.CodeschoolRedUnderline},
