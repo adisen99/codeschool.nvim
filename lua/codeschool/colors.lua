@@ -11,7 +11,7 @@ return {
   dark4 = hsl("#555e61"),
   light0_hard = hsl("#f0f0f0"),
   light0 = hsl("#fbfbfb"),
-  light0_soft = hsl("#f2f2f2"),
+  light0_soft = hsl("#fefefe"),
   light1 = hsl("#ebebeb"),
   light2 = hsl("#d5d5d5"),
   light3 = hsl("#bdbdbd"),

@@ -6,7 +6,7 @@ The basic structure and most of the code is inspired from the [gruvbox.nvim](htt
 
 # Installation
 
-**Requirements** - `codeschool.nvim` requires the `neovim-nightly` or `neovim v0.5` to work.
+**Requirements** - `codeschool.nvim` requires the `neovim v0.5` or greater to work.
 
 Using `vim-plug`
 
@@ -56,30 +56,30 @@ require('lush')(require('codeschool').setup({
   langs = {
     "c",
     "clojure",
-   	"coffeescript",
-   	"csharp",
-   	"css",
-   	"elixir",
-   	"golang",
-   	"haskell",
-   	"html",
-   	"java",
-   	"js",
-   	"json",
-   	"jsx",
-   	"lua",
-   	"markdown",
-   	"moonscript",
-   	"objc",
-   	"ocaml",
-   	"purescript",
-   	"python",
-   	"ruby",
-   	"rust",
-   	"scala",
-   	"typescript",
-   	"viml",
-   	"xml"
+    "coffeescript",
+    "csharp",
+    "css",
+    "elixir",
+    "golang",
+    "haskell",
+    "html",
+    "java",
+    "js",
+    "json",
+    "jsx",
+    "lua",
+    "markdown",
+    "moonscript",
+    "objc",
+    "ocaml",
+    "purescript",
+    "python",
+    "ruby",
+    "rust",
+    "scala",
+    "typescript",
+    "viml",
+    "xml"
   }
 }))
 ```
@@ -120,7 +120,7 @@ let g:codeschool_contrast_light = "soft"
 
 # Statusline/Tabline
 
-Please use the [nvim-hardline](https://github.com/ojroques/nvim-hardline) written by `ojroques` on GitHub. It has support for `codeschool` colorscheme. You can also use lightline or airline.
+You can use the [nvim-hardline](https://github.com/ojroques/nvim-hardline) written by `ojroques` on GitHub. It has support for `codeschool` colorscheme. You can also use lightline or airline.
 
 # Screenshots
 
