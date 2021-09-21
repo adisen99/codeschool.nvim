@@ -9,10 +9,10 @@ M = lush(function()
     -- Neogit
   NeogitNotificationInfo {base.CodeschoolGreen},
   NeogitNotificationWarning {base.CodeschoolYellow},
-  NeogitNotificationError {base.CodeschoolRed},
+  NeogitNotificationError {base.CodeschoolError},
 
   NeogitDiffAddHighlight {base.CodeschoolGreenSign},
-  NeogitDiffDeleteHighlight {base.CodeschoolRedSign},
+  NeogitDiffDeleteHighlight {base.CodeschoolErrorSign},
   NeogitDiffContextHighlight {base.CodeschoolFg3},
   NeogitHunkHeader {base.CodeschoolFg1},
   NeogitHunkHeaderHighlight {base.CodeschoolFg1},
