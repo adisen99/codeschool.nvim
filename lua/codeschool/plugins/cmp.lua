@@ -7,10 +7,10 @@ local M = {}
 M = lush(function()
 	return {
     -- nvim-cmp
-    CmpItemKind {base.CodeschoolAqua},
+    CmpItemKind {base.CodeschoolYellow},
     CmpItemAbbrMatch {base.CodeschoolFg1},
     CmpItemAbbr {base.CodeschoolFg4},
-    CmpItemMenu {base.CodeschoolBlue}
+    CmpItemMenu {base.CodeschoolAqua}
 	}
 end)
 
