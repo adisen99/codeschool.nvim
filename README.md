@@ -111,6 +111,17 @@ lua vim.g.codeschool_contrast_light = "soft"
 " or
 let g:codeschool_contrast_light = "soft"
 ```
+- Setting miscellaneous options
+
+```lua
+g.codeschool_hls_lspreference = "orange"
+g.codeschool_hls_cursor = "orange"
+g.codeschool_hls_highlight = "orange"
+g.codeschool_italicize_booleans = true
+g.codeschool_tabline_sel = "fg0"
+}))
+```
+
 **For more Configuration option** - go to the [CONFIGURATION](https://github.com/adisen99/codeschool.nvim/wiki/Configuration) page in the [WIKI](https://github.com/adisen99/codeschool.nvim/wiki)
 
 # Additional supported plugins
