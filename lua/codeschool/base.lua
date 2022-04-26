@@ -260,7 +260,7 @@ local base_group = lush(function()
     SpecialChar {CodeschoolBlue},
     Tag {CodeschoolAquaBold},
     Delimiter {Special},
-    Comment {fg = gray, gui = styles.italic_comments},
+    Comment {fg = bg4, gui = styles.italic_comments},
     Debug {CodeschoolRed},
     Underlined {fg = blue, gui = styles.underline},
     Bold {gui = styles.bold},
