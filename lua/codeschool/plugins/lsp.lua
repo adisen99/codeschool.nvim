@@ -28,9 +28,9 @@ M = lush(function()
     LspDiagnosticsVirtualTextWarning {base.CodeschoolWarning},
     LspDiagnosticsVirtualTextInformation {base.CodeschoolBlue},
     LspDiagnosticsVirtualTextHint {base.CodeschoolAqua},
-    -- LspReferenceRead {base.CodeschoolYellowBold},
-    -- LspReferenceText {base.CodeschoolYellowBold},
-    -- LspReferenceWrite {base.CodeschoolYellowBold},
+    LspReferenceRead {base.CodeschoolBg3},
+    LspReferenceText {base.CodeschoolBg3},
+    LspReferenceWrite {base.CodeschoolBg3},
 	}
 end)
 

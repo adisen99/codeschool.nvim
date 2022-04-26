@@ -237,7 +237,7 @@ local base_group = lush(function()
     },
     Character {CodeschoolBlue},
     Number {CodeschoolBlue},
-    Boolean {CodeschoolBlue},
+    Boolean {fg = blue, gui = styles.italic_booleans},
     Float {CodeschoolBlue},
     Identifier {CodeschoolPurple},
     Function {CodeschoolBlue},
