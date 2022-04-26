@@ -83,7 +83,7 @@ if not utils.tobool(vim.g.codeschool_italicize_comments) then
   styles.italic_comments = "NONE"
 end
 
-if not utils.tobool(vim.g.codeschool_italicize_booleans) then
+if utils.tobool(vim.g.codeschool_italicize_booleans) then
   styles.italic_booleans = "italic"
 end
 

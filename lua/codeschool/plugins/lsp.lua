@@ -1,6 +1,7 @@
 -- lsp highlights
 local lush = require("lush")
 local base = require("codeschool.base")
+local colors = require("codeschool.colors")
 
 local M = {}
 
@@ -28,9 +29,9 @@ M = lush(function()
     LspDiagnosticsVirtualTextWarning {base.CodeschoolWarning},
     LspDiagnosticsVirtualTextInformation {base.CodeschoolBlue},
     LspDiagnosticsVirtualTextHint {base.CodeschoolAqua},
-    LspReferenceRead {base.CodeschoolBg3},
-    LspReferenceText {base.CodeschoolBg3},
-    LspReferenceWrite {base.CodeschoolBg3},
+    LspReferenceRead {fg = colors.dark2, bg = colors.faded_blue},
+    LspReferenceText {fg = colors.dark2, bg = colors.faded_blue},
+    LspReferenceWrite {fg = colors.dark2, bg = colors.faded_blue},
 	}
 end)
 
