@@ -16,7 +16,7 @@ M = lush(function()
     ["@literal"] = { fg = base.String },
     ["@uri"] = { fg = base.Underlined },
     ["@variable"] = vim.tbl_extend("force", { fg = base.CodeschoolFg1 }),
-    ["@variable.builtin"] = { fg = base.Include },
+    ["@variable.builtin"] = { fg = base.CodeschoolFg1 },
     ["@punctuation.delimiter"] = { fg = base.Delimiter },
     ["@punctuation.bracket"] = { fg = base.Delimiter },
     ["@punctuation.special"] = { fg = base.Delimiter },
