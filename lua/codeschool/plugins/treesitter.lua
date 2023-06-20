@@ -16,7 +16,7 @@ M = lush(function()
     TSTitle { base.Title },
     TSLiteral { base.String },
     TSURI { base.Underlined },
-    TSVariable { fg = base.Variable },
+    TSVariable { base.Variable },
     TSPunctDelimiter { base.Delimiter },
     TSPunctBracket { base.Delimiter },
     TSPunctSpecial { base.Delimiter },
