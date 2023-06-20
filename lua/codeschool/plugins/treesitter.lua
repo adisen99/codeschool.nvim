@@ -36,7 +36,7 @@ M = lush(function()
     TSParameter { base.Identifier },
     TSParameterReference { TSParameter },
     TSMethod { base.Function },
-    TSField { base.Identifier },
+    TSField { base.CodeschoolFg1 },
     TSProperty { base.Identifier },
     TSConstructor { base.Special },
     TSAnnotation { base.PreProc },
