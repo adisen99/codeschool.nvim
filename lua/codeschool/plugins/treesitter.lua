@@ -16,7 +16,7 @@ M = lush(function()
     ["@literal"] = { fg = base.String },
     ["@uri"] = { fg = base.Underlined },
     ["@variable"] = vim.tbl_extend("force", { fg = base.CodeschoolFg1 }),
-    ["@variable.builtin"] = { fg = base.CodeschoolFg1 },
+    ["@variable.builtin"] = { fg = base.Include },
     ["@punctuation.delimiter"] = { fg = base.Delimiter },
     ["@punctuation.bracket"] = { fg = base.Delimiter },
     ["@punctuation.special"] = { fg = base.Delimiter },
@@ -64,6 +64,23 @@ M = lush(function()
     ["@note"] = { fg = base.Todo },
     ["@warning"] = { fg = colors.bright_yellow, gui = table_concat({ styles.bold, styles.italic_comments }, ",") },
     ["@danger"] = { fg = colors.bright_red, gui = table_concat({ styles.bold, styles.italic_comments }, ",") }
+    -- Semantic token
+    ["@lsp.type.class"] = { link = "@constructor" },
+    ["@lsp.type.comment"] = {}, -- do not overwrite comments
+    ["@lsp.type.decorator"] = { link = "@parameter" },
+    ["@lsp.type.enum"] = { link = "@type" },
+    ["@lsp.type.enumMember"] = { link = "@constant" },
+    ["@lsp.type.function"] = { link = "@function" },
+    ["@lsp.type.interface"] = { link = "@keyword" },
+    -- ["@lsp.type.macro"] = { link = "@macro" },
+    ["@lsp.type.method"] = { link = "@method" },
+    ["@lsp.type.namespace"] = { link = "@namespace" },
+    ["@lsp.type.parameter"] = { link = "@parameter" },
+    ["@lsp.type.property"] = { link = "@property" },
+    ["@lsp.type.struct"] = { link = "@constructor" },
+    ["@lsp.type.type"] = { link = "@type" },
+    ["@lsp.type.typeParameter"] = { link = "@type.definition" },
+    ["@lsp.type.variable"] = { link = "@variable" },
   }
 end)
 
