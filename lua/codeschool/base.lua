@@ -226,7 +226,7 @@ local base_group = lush(function()
     VisualNOS { Visual },
     -- WarningMsg {CodeschoolRedBold},
     WildMenu { fg = blue, bg = bg2, gui = styles.bold },
-    Variable { fg = CodeschoolFg1 },
+    Variable { CodeschoolFg1 },
     Constant { CodeschoolBlue },
     Special { fg = special_string_fg, bg = special_string_bg, gui = special_string_gui },
     String {
