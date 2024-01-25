@@ -85,6 +85,7 @@ local hls_highlight = utils.get_color_from_var(vim.g.codeschool_hls_highlight, y
 local number_column = utils.get_color_from_var(vim.g.codeschool_number_column, nil, colors)
 local color_column = utils.get_color_from_var(vim.g.codeschool_color_column, bg1, colors)
 local vert_split = utils.get_color_from_var(vim.g.codeschool_vert_split, bg0, colors)
+local win_separator = utils.get_color_from_var(vim.g.codeschool_win_separator, bg0, colors)
 local tabline_sel = utils.get_color_from_var(vim.g.codeschool_tabline_sel, green, colors)
 local sign_column = utils.get_color_from_var(vim.g.codeschool_sign_column, bg1, colors)
 
@@ -195,6 +196,7 @@ local base_group = lush(function()
     DiffText { fg = yellow, bg = bg0, gui = styles.inverse },
     -- ErrorMsg {fg = bg0, bg = colors.error, gui = styles.bold},
     VertSplit { fg = bg3, bg = vert_split },
+    WinSeparator { fg = bg3, bg = win_separator },
     Folded { fg = gray, bg = bg1, gui = styles.italic_strings },
     FoldColumn { fg = gray, bg = bg1 },
     SignColumn { bg = sign_column },
