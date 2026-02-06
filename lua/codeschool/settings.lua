@@ -24,11 +24,11 @@ local styles = {
   italic = "italic",
   bold = "bold",
   underline = "underline",
-  inverse = "reverse",
+  inverse = "NONE",
   undercurl = "undercurl",
-  invert_signs = "",
-  invert_selection = "reverse",
-  invert_tabline = "",
+  invert_signs = "NONE",
+  invert_selection = "NONE",
+  invert_tabline = "NONE",
   italic_comments = "italic",
   italic_booleans = "NONE",
   italic_strings = "NONE",
@@ -59,8 +59,8 @@ if not utils.tobool(vim.g.codeschool_inverse) then
   styles.inverse = "NONE"
 end
 
-if not utils.tobool(vim.g.codeschool_inverse) then
-  styles.inverse = "NONE"
+if utils.tobool(vim.g.codeschool_inverse) then
+  styles.inverse = "reverse"
 end
 
 if not utils.tobool(vim.g.codeschool_undercurl) then
@@ -71,8 +71,8 @@ if utils.tobool(vim.g.codeschool_invert_signs) then
   styles.invert_signs = "reverse"
 end
 
-if not utils.tobool(vim.g.codeschool_invert_selection) then
-  styles.invert_selection = "NONE"
+if utils.tobool(vim.g.codeschool_invert_selection) then
+  styles.invert_selection = "reverse"
 end
 
 if utils.tobool(vim.g.codeschool_invert_tabline) then
